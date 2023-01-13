@@ -27,9 +27,9 @@ function read(){
 })}
 
 function create(){
-    age = process.argv[3]
-    kind = process.argv[4]
-    name = process.argv[5]
+    var age = process.argv[3]
+    var kind = process.argv[4]
+    var name = process.argv[5]
     let fileResult
     if(age === undefined || kind === undefined || name === undefined){
         console.log('Usage: node pets.js create AGE KIND NAME')    
@@ -56,6 +56,7 @@ function create(){
 
 }
 
+module.exports = create
 
 function update(){
     index = process.argv[3]
